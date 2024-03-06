@@ -1,0 +1,421 @@
+.parent {
+    background-color: #aaa;
+    width: 560px;
+    height: 425px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color {
+    background-color: #ffffffa1;
+    width: 525px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+.header {
+    position: relative;
+}
+
+.header .one img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 235px;
+    top: -5px;
+}
+
+.header .one h3 {
+    font-size: 40px;
+    position: absolute;
+    left: 316px;
+    top: -45px
+}
+
+.header .one b {
+    color: red;
+    border-bottom: 4px solid
+}
+
+.header .one hr {
+    position: absolute;
+    top: 55px;
+    left: -10px;
+    width: 1363px;
+    border: 2px solid;
+    border-top: 2px double red;
+    color: red;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #fad7d7;
+}
+
+.child h3 {
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 17%;
+    left: 55%;
+}
+
+.child hr {
+    position: absolute;
+    left: 37%;
+    top: 26%;
+    width: 380px;
+    border: none;
+    border-top: 2px double aqua;
+    color: aqua;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.child_one h4 {
+    position: absolute;
+    left: 56%;
+    top: 25%;
+    font-size: 25px;
+    color: #00000099;
+}
+
+.button {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+}
+
+.button button {
+    width: 115px;
+    height: 34px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 19px;
+    text-align: center;
+    border: 2px solid aqua;
+    background-color: white;
+}
+
+.button_one {
+    position: relative;
+}
+
+.button_one {
+    position: absolute;
+    left: 45%;
+    top: 44%;
+}
+
+.button_one button {
+    width: 115px;
+    height: 34px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+}
+
+hr {
+
+    position: absolute;
+    top: 53%;
+    left: 40%;
+    width: 245px;
+    border: none;
+    border-top: 2px double #ccc;
+    color: #aaa;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.day {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    color: #00000099;
+}
+
+.price {
+    position: absolute;
+    top: 71%;
+    left: 45%;
+}
+
+.price button {
+    background-color: #0b9191;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.price b {
+    background-color: white;
+    color: black;
+}
+
+.feat i {
+    position: absolute;
+    top: 3%;
+    left: 45%;
+    font-size: 25px;
+    background-color: #e5c3c3;
+    color: darkcyan;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: absolute;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #2196f3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.line {
+    background-color: red;
+    width: 795px;
+    height: 6px;
+    position: absolute;
+    left: 0%;
+    top: 72px;
+}
+
+.feat_one {
+    position: relative;
+}
+
+.feat_one i {
+    position: absolute;
+    top: 400px;
+    left: 41%;
+    color: #aaa;
+}
+
+.feat_two {
+    position: relative;
+}
+
+.feat_two i {
+    position: absolute;
+    top: 357px;
+    left: 41%;
+    color: #aaa;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .header .one img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        left: 30%;
+        top: 0%;
+    }
+
+    .header .one h3 {
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        top: -23px;
+    }
+
+    .header .one hr {
+        position: absolute;
+        top: 55px;
+        left: -12px;
+        width: 375px;
+    }
+
+    .line {
+        width: 135px;
+    }
+
+    .parent {
+        width: 300px;
+        height: 350px;
+    }
+
+    .color {
+        width: 265px;
+        height: 330px;
+    }
+
+    .child h3 {
+        font-size: 18px;
+        position: absolute;
+        top: 29%;
+        left: 45%;
+    }
+
+    .child hr {
+        position: absolute;
+        left: 19%;
+        top: 35%;
+        width: 235px;
+    }
+
+    .child_one h4 {
+        position: absolute;
+        left: 51%;
+        top: 36%;
+        font-size: 18px;
+    }
+
+    .button {
+        position: absolute;
+        left: 36%;
+        top: 44%;
+    }
+
+    .button button {
+        width: 95px;
+        height: 34px;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .button_one {
+        position: absolute;
+        left: 36%;
+        top: 50%;
+    }
+
+    .button_one button {
+        width: 95px;
+        height: 34px;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    hr {
+        position: absolute;
+        top: 55%;
+        left: 28%;
+        width: 165px;
+    }
+
+    .feat i {
+        position: absolute;
+        top: 3%;
+        left: 80%;
+        font-size: 21px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .day {
+        position: absolute;
+        top: 56%;
+        left: 35%;
+    }
+
+    .feat_one i {
+        position: absolute;
+        top: 509px;
+        left: 28%;
+        font-size: 13px;
+    }
+
+    .feat_two i {
+        position: absolute;
+        top: 468px;
+        left: 28%;
+        font-size: 13px;
+        color: #aaa;
+    }
+
+    .price {
+        position: absolute;
+        top: 67%;
+        left: 36%;
+    }
+
+    .price button {
+        width: 90px;
+        height: 25px;
+        border-radius: 6px;
+    }
+}
+
+/* Medium Screens */
+
+@media (max-width: 992px) {}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {}
